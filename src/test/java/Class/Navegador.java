@@ -70,7 +70,7 @@ public class Navegador {
 		 try {
 			driver = null;
 			 
-			 String browserName = System.getProperty("browser", DriverList.ANDROID.toString());
+			 String browserName = System.getProperty("browser", DriverList.CHROME.toString());
 			 browser = DriverList.valueOf(browserName);
 			switch (browser) {
 			case CHROME:
