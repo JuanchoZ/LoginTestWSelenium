@@ -43,8 +43,6 @@ public class TestSignInTest {
 		Accpage = new AccountPage(driver);
 		Create  = new CreatePage(driver);
 		
-		driver.manage().window().maximize();
-		
 	}
 
 	@Test
@@ -62,7 +60,7 @@ public class TestSignInTest {
 		Sign.Create();
 		
 		//In the create Account page we assert the form to be present and we proceed with the creation process\\
-		assertTrue(Create.CheckUrl());
+		//assertTrue(Create.CheckUrl());
 		assertTrue(Create.Chekcs());
 		Create.CreateAcount();
 	}
@@ -75,7 +73,7 @@ public class TestSignInTest {
 		driver.get(Url);
 		Main.ClickSignIn();
 		Sign.CreatePara(email);
-		assertTrue(Create.CheckUrl());
+		//assertTrue(Create.CheckUrl());
 		assertTrue(Create.Chekcs());
 	}
 

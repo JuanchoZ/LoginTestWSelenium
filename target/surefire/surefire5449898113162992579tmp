@@ -1,0 +1,6 @@
+#surefire
+#Wed Feb 26 17:44:37 CET 2020
+browser=ANDROID
+user.dir=C\:\\Users\\usuario\\eclipse-workspace\\TestLoginAutoPractice
+localRepository=C\:\\Users\\usuario\\.m2\\repository
+basedir=C\:\\Users\\usuario\\eclipse-workspace\\TestLoginAutoPractice

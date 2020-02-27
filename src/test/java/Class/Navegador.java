@@ -104,14 +104,18 @@ public class Navegador {
 				break;
 			case ANDROID:
 				
-				SelendroidCapabilities capa = new SelendroidCapabilities().device("");
+				DesiredCapabilities capa = new DesiredCapabilities().android();
+				
 				driver = new SelendroidDriver(capa);
 				break;
 			default:
 				break;
 			}
-			driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
-			driver.manage().window().maximize();
+			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+			if(browser != DriverList.ANDROID)
+			{
+				driver.manage().window().maximize();
+			}
 			return driver;
 		} catch (Exception e) {
 			throw e;

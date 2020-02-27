@@ -39,8 +39,6 @@ public class TestLoginPageObject {
 		Accpage = new AccountPage(driver);
 	    Product = new ProductPage(driver);
 	    Check   = new CheckOutPage(driver);
-	    
-		driver.manage().window().maximize();
 		driver.get(Url);
 	}
 
